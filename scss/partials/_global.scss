@@ -1,0 +1,16 @@
+body{
+    margin:0px;
+}
+.header__logo-title-container{
+    display:inline-flex;
+    &__logo{
+        width: 50px;
+    }
+}
+
+.nav__lists{
+    display: flex;
+    &__item{
+        justify-items: end;
+    }
+}

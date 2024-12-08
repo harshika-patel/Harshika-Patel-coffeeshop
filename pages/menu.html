@@ -19,9 +19,9 @@
         </div>
         <nav class="nav">
             <ul class="nav__lists">
-                    <li ><a class="nav__lists-item" href="index.html">ABOUT</a></li>
-                    <li ><a class="nav__lists-item" href="./pages/menu.html">MENU</a></li>
-                    <li ><a class="nav__lists-item nav__lists-item--highlight" href="./pages/menu.html">SHOP NOW</a></li>
+                    <li ><a class="nav__lists-item" href="../index.html">ABOUT</a></li>
+                    <li ><a class="nav__lists-item" href="./menu.html">MENU</a></li>
+                    <li ><a class="nav__lists-item nav__lists-item--highlight" href="./menu.html">SHOP NOW</a></li>
             </ul>
         </nav>
     </header>
@@ -33,11 +33,11 @@
         <section class="lists"> 
             <ul class="menu__lists">
                 <div class="separator"></div>
-                <li class="menu__list">HOT DRINKS</li>
+                <li class="menu__list"><a class="menu__list-link" href="#hot_drinks">HOT DRINKS</a></li>
                 <div class="separator"></div>
-                <li class="menu__list">COLD DRINKS</li>
+                <li class="menu__list"> <a class="menu__list-link" href="#cold_drinks">COLD DRINKS</a> </li>
                 <div class="separator"></div>
-                <li class="menu__list">PASTRIES</li>
+                <li class="menu__list"><a class="menu__list-link" href="#pastries">PASTRIES</a></li>
             </ul>
         </section>
         <section  class="details">
@@ -45,7 +45,7 @@
             
                     <ul class="Menu__details">
                         <!-- Hot Drinks Category -->
-                        <li class="menu__category">
+                        <li class="menu__category" id="hot_drinks">
                             <h2 class="menu__title">Hot Drinks</h2>
                             <ul>
                                 <li class="menu__category-items">
@@ -66,7 +66,7 @@
                         </li>
             
                         <!-- Cold Drinks Category -->
-                        <li class="menu__category">
+                        <li class="menu__category menu__category--modifier" id="cold_drinks">
                             <h2  class="menu__title">Cold Drinks</h2>
                             <ul>
                                 <li class="menu__category-items">
@@ -87,7 +87,7 @@
                         </li>
             
                         <!-- Pastries Category -->
-                        <li class="menu__category">
+                        <li class="menu__category" id="pastries">
                             <h2  class="menu__title">Pastries</h2>
                             <ul>
                                 <li class="menu__category-items">

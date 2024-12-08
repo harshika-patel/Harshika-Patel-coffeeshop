@@ -1,16 +1,48 @@
-body{
-    margin:0px;
+@use "./variables" as *;
+*,
+::after,
+::before{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
 }
-.header__logo-title-container{
-    display:inline-flex;
+body{
+    margin:1rem;
+    font-family: 'Open Sans', sans-serif;;
+    background-color: white;
+}
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    background-color: $primary-color-pink;
+    &__logo-title-container{
+        display: flex;
+        align-items: center;
+    }
     &__logo{
-        width: 50px;
+        width:$icons_width;
+        margin-right: 5px;
     }
 }
 
 .nav__lists{
+   
     display: flex;
-    &__item{
-        justify-items: end;
-    }
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    padding: 2rem;
+    gap: 1rem; 
+    &-item{
+        text-decoration: none;
+        color:$fontColor-primary;
+        font-weight: 400;
+        font-size: 21px;
+        &--highlight{
+            color:$fontColor-highlight
+        }
+    } 
 }
+
